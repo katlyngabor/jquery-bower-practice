@@ -1,28 +1,402 @@
-body {
-    background: #fafafa;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
+$colordarkblue:#083452;
+$colorgray:#7a91a1;
+$colorimages:#3e82b3;
+$colorlightblue:#106db3;
+$colorbuttongray: #5e686f;
+$colorbutton:#a3b3bf;
+
+@mixin footer-stuff {
+font-family:'PT Sans', sans-serif;
+float:left;
 }
 
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: #eee;
-    border-radius: 6px;
-    padding: 60px;
-    h1 {
-        font-size: 60px;
-        line-height: 1;
-        letter-spacing: -1px;
+
+#wrapperHeader {
+ width:100%;
+ height:400px; 
+ background:url(images/header.jpg);
+}
+
+#company-info {
+float:left;
+width: 100%;
+margin-top: 25px;
+}
+
+.logo-text {
+float:left;
+color:  $colordarkblue;
+margin-left: 10px;
+}
+
+img.logo-image {
+float: left;
+margin-left: 230px;
+margin-top: -14px;
+width:30px;
+}
+
+#header-links {
+color:  $colordarkblue;
+width: 186px;
+height: 38px;
+float: right;
+margin-right:100px;
+font-family: 'Oswald', sans-serif;
+}
+ .search-text {
+    display: inline-block;
+    text-decoration:none;
+        color: $colorgray;
+}
+
+ .about-text {
+    display: inline-block;
+    margin-right: 10px;
+ }
+
+ a.about-link {
+    text-decoration:none;
+    color: $colordarkblue;
+ }
+
+ a.search-link {
+    text-decoration:none;
+    color: $colordarkblue;
+ }
+
+#titleText {
+font-family: 'PT Sans', sans-serif;
+color:white;
+font-size: 80px;
+text-align: center;
+padding-top: 150px;
+width:100%;
+height: 200px;
+ }
+
+ .tagline {
+    color:black;
+    font-size: 12px;
+    margin-top: -20px;
+ }
+
+ /*******Main Body******/
+
+#main-body {
+    font-family: 'PT Sans', sans-serif;
+    width: 1300px;
+    margin: 0 auto;
+ }
+
+.main-text {
+width:600px;
+float: left;
+margin-left:100px;
+}
+
+ h1 {
+    font-size:60px;
+    margin:5px;
+    margin-top:50px;
+    font-family: 'Oswald', sans-serif;
+    color:$colordarkblue;
+ }
+
+ .tiny-headshot {
+    width:25px;
+    float:left;
+    margin-left: 8px;
+ }
+
+
+.blogger-name {
+font-family: 'PT Sans', sans-serif;
+font-size: 12px;
+float: left;
+margin-top: 4px;
+margin-left: 5px;
+color:$colorlightblue;
+}
+ .post-details {
+    font-size: 12px;
+    float: left;
+    margin-top: 4px;
+    margin-left: 5px;
+    color:$colorgray;
+
+ }
+
+ p {
+    font-size: 15px;
+    padding-top:40px;
+    clear: both;
+ }
+
+blockquote {
+border-left: 2px solid #D3D3D3;
+font-size:30px;
+color: $colorlightblue;
+padding-left:10px;
+}
+
+.bottom-button {
+width: 300px;
+}
+
+ button {
+    background-color:$colorbutton;
+    color:white;
+    border:none;
+    margin-left:10px;
+ }
+
+ button:hover {
+background-color: $colorlightblue;
+height:35px;
+width:175px;
+color:white;
+} 
+
+.comments-button {
+float:left;
+height: 35px;
+width: 175px;
+margin-left: 0px;
+}
+
+.comments-image {
+
+float: left;
+background-color: $colorbuttongray;
+width: 18px;
+padding: 9px;
+margin: -5px;
+border:none;
+
+}
+
+.comments-image:hover {
+background-color:$colordarkblue;
+}
+
+.read-later-button {
+float: left;
+height: 35px;
+width: 175px;
+
+}
+
+.read-later-image {
+float:left;
+background-color: $colorbuttongray;
+width: 19px;
+padding: 10px;
+margin: -5px;
+border: none;
+
+}
+
+.read-later-image:hover {
+background-color:$colordarkblue;
+}
+
+.share-button {
+float:left;
+height:35px;
+width: 175px;
+}
+
+.share-image {
+float:left;
+background-color: $colorbuttongray;
+width: 19px;
+padding: 10px;
+margin: -5px;
+border: none;
+
+}
+
+.share-image:hover {
+background-color:$colordarkblue;
+}
+
+
+
+/*****SIDE BAR******/
+
+.side-bar {
+width:400px;
+height: 600px;
+float:right;
+margin-right:40px;
+margin-top:50px;
+}
+
+.contact {
+margin-top:33.5px;
+text-align: center;
+}
+
+.anne-marie {
+color:$colorlightblue;
+font-size: 20px;
+}
+
+a.twitter {
+color:$colorgray;
+text-decoration: none;
+}
+
+a.facebook {
+color:$colorgray;
+text-decoration: none;
+}
+
+a.instagram {
+color: $colorgray;
+text-decoration: none;
+}
+
+.side-bar-image-caption {
+margin: 70px 30px 50px 60px;
+}
+
+.side-bar-link {
+float:right;
+margin-right:30px;
+color:$colorgray;
+}
+
+.sidebar-text {
+margin-top:80px;
+margin-left:60px;
+margin-right:60px;
+}
+
+.sidebar-heading {
+color:$colorlightblue;
+font-size: 20px;
+font-family: 'Oswald', sans-serif;
+}
+
+.sidebar-paragraph {
+margin:0px;
+}
+
+
+
+/***FOOTER***/
+
+
+
+
+footer {
+width: 1300px;
+clear: both;
+float: left;
+margin-top: 85px;
+padding-top: 30px;
+border-top: 2px solid $colorbutton;
+position:relative
+}
+
+.footer-title {
+float: left;
+text-align: center;
+width: 1300px;
+color:#083452;
+font-size: 60px;
+font-family: 'Oswald', sans-serif;
+padding-bottom: 30px;
+}
+
+
+.image-holder {
+   display:inline-block;
+   position: relative;
+   float:left;
+}
+
+.image-holder:after {
+   content:'';
+   top: 0;
+   left: 0;
+   z-index: 10;
+   width: 100%;
+   height: 100%;
+   display: block;
+   position: absolute;
+   background: $colorimages;
+   opacity: 0.6;
+}
+
+.image-holder:hover:after {
+   opacity: 0;
+  }
+
+  /***   #container:hover > #cube{
+  background-color: green;
+  opacity: .25;
+  color: white;
+}
+#container:hover > #cube2{
+  background-color: black;
+/*  opacity: .25;*/
+ 
+
+.footer-nav-bar {
+    clear:both;
+    background-color:$colordarkblue;
+    width:1300px;
+    padding: 30px; 
+    @include footer-stuff;
+                                                              ;
+}
+
+.copyright-info {
+    width: 400px;
+    color:  $colorgray;
+    font-size: 10px;
+    margin-left: 200px;
+    @include footer-stuff;
+}
+
+.ironyard-logo {
+    width:40px;
+}
+
+.nav-bar-links {
+    width:300px;
+    float:right;
+    font-family:'PT Sans', sans-serif;
+    font-size: 10px;
+    margin-right:100px;
+}
+
+.nav-item-one {
+        text-decoration:none;
+        color: $colorgray;
+        border-right: 1px solid $colorgray;
+        padding:5px;
     }
-}
 
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
+.nav-item-two {
+        text-decoration:none;
+        color: #7a91a1;
+        border-right: 1px solid $colorgray;
+        padding:5px;
+    }
+
+.nav-item-three {
+        text-decoration:none;
+        color: #7a91a1;
+        border-right: 1px solid $colorgray;
+        padding:5px;
+    }
+
+.nav-item-four {
+        text-decoration:none;
+        color: $colorgray;
+        padding-left:5px;
+    }
